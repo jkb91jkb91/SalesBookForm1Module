@@ -19,6 +19,7 @@ struct Colors {
     static let buttonBlue = UIColor(displayP3Red: 32/255, green: 82/255, blue: 143/255, alpha: 1)
     static let lblDescriptionColor = UIColor(displayP3Red: 191/255, green: 198/255, blue: 207/255, alpha: 1)
     static let txtFieldBlue = UIColor(displayP3Red: 248/255, green: 249/255, blue: 251/255, alpha: 1)
+    static let blueDescription = UIColor(displayP3Red: 136/255, green: 151/255, blue: 164/255, alpha: 1)
 }
 
 struct Description {
