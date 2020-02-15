@@ -97,7 +97,7 @@ class FirstScreenView: UIView {
         inputLbl.translatesAutoresizingMaskIntoConstraints = false
         inputLbl.text = "Wysokość udzielonego kredytu/pożyczki"
         inputLbl.textAlignment = .center
-        inputLbl.textColor = Colors.blueDescription
+        inputLbl.textColor = Colors.txtFieldBlue
         inputLbl.backgroundColor = .clear
         return inputLbl
     }()
@@ -190,6 +190,130 @@ class FirstScreenView: UIView {
         return inputLbl2
         }()
     
+    let inputGreenfourth: UIView = {
+        let inputGreenfourth = UIView()
+        inputGreenfourth.translatesAutoresizingMaskIntoConstraints =  false
+        inputGreenfourth.clipsToBounds = true
+        inputGreenfourth.backgroundColor = Colors.green
+        inputGreenfourth.layer.cornerRadius = 2
+        return inputGreenfourth
+        }()
+    
+    
+    
+    let inputViefive: UIView = {
+        let inputViefive = UIView()
+        inputViefive.translatesAutoresizingMaskIntoConstraints =  false
+        inputViefive.clipsToBounds = true
+        inputViefive.backgroundColor = Colors.txtFieldBlue
+        inputViefive.layer.cornerRadius = 5
+        return inputViefive
+        }()
+    
+    let inputLblfive: UILabel = {
+        let inputLblfive = UILabel()
+        inputLblfive.translatesAutoresizingMaskIntoConstraints = false
+        inputLblfive.text = "Data wejścia w życie"
+        inputLblfive.textAlignment = .center
+        inputLblfive.textColor = Colors.blueDescription
+        inputLblfive.backgroundColor = .clear
+        return inputLblfive
+        }()
+       
+    let inputLbl2five: UILabel = {
+        let inputLbl2five = UILabel()
+        inputLbl2five.translatesAutoresizingMaskIntoConstraints = false
+        inputLbl2five.textAlignment = .center
+        inputLbl2five.textColor = .black
+        inputLbl2five.backgroundColor = .clear
+        return inputLbl2five
+        }()
+    
+    let inputGreenfive: UIView = {
+        let inputGreenfive = UIView()
+        inputGreenfive.translatesAutoresizingMaskIntoConstraints =  false
+        inputGreenfive.clipsToBounds = true
+        inputGreenfive.backgroundColor = Colors.green
+        inputGreenfive.layer.cornerRadius = 2
+        return inputGreenfive
+        }()
+    
+    
+    
+    let inputViesix: UIView = {
+        let inputViesix = UIView()
+        inputViesix.translatesAutoresizingMaskIntoConstraints =  false
+        inputViesix.clipsToBounds = true
+        inputViesix.backgroundColor = Colors.txtFieldBlue
+        inputViesix.layer.cornerRadius = 5
+        return inputViesix
+        }()
+    
+    let inputLblsix: UILabel = {
+        let inputLblsix = UILabel()
+        inputLblsix.translatesAutoresizingMaskIntoConstraints = false
+        inputLblsix.text = "Suma ubezpieczenia"
+        inputLblsix.textAlignment = .center
+        inputLblsix.textColor = Colors.blueDescription
+        inputLblsix.backgroundColor = .clear
+        return inputLblsix
+        }()
+       
+    let inputLbl2six: UILabel = {
+        let inputLbl2six = UILabel()
+        inputLbl2six.translatesAutoresizingMaskIntoConstraints = false
+        inputLbl2six.textAlignment = .center
+        inputLbl2six.textColor = .black
+        inputLbl2six.backgroundColor = .clear
+        return inputLbl2six
+        }()
+    
+    let inputGreensix: UIView = {
+        let inputGreensix = UIView()
+        inputGreensix.translatesAutoresizingMaskIntoConstraints =  false
+        inputGreensix.clipsToBounds = true
+        inputGreensix.backgroundColor = Colors.green
+        inputGreensix.layer.cornerRadius = 2
+        return inputGreensix
+        }()
+    
+    let inputVieseven: UIView = {
+        let inputVieseven = UIView()
+        inputVieseven.translatesAutoresizingMaskIntoConstraints =  false
+        inputVieseven.clipsToBounds = true
+        inputVieseven.backgroundColor = Colors.txtFieldBlue
+        inputVieseven.layer.cornerRadius = 5
+        return inputVieseven
+        }()
+    
+    let inputLblseven: UILabel = {
+        let inputLblseven = UILabel()
+        inputLblseven.translatesAutoresizingMaskIntoConstraints = false
+        inputLblseven.text = "Rodzaj/typ ubezpieczenia"
+        inputLblseven.textAlignment = .center
+        inputLblseven.textColor = Colors.blueDescription
+        inputLblseven.backgroundColor = .clear
+        return inputLblseven
+        }()
+       
+    let inputLbl2seven: UILabel = {
+        let inputLbl2seven = UILabel()
+        inputLbl2seven.translatesAutoresizingMaskIntoConstraints = false
+        inputLbl2seven.textAlignment = .center
+        inputLbl2seven.textColor = .black
+        inputLbl2seven.backgroundColor = .clear
+        return inputLbl2seven
+        }()
+    
+    let inputGreenseven: UIView = {
+        let inputGreenseven = UIView()
+        inputGreenseven.translatesAutoresizingMaskIntoConstraints =  false
+        inputGreenseven.clipsToBounds = true
+        inputGreenseven.backgroundColor = Colors.green
+        inputGreenseven.layer.cornerRadius = 2
+        return inputGreenseven
+        }()
+    
     let lineTwo: UIView = {
         let lineTwo = UIView()
         lineTwo.translatesAutoresizingMaskIntoConstraints =  false
@@ -253,6 +377,22 @@ class FirstScreenView: UIView {
         addSubview(inputViefourth)
         inputViefourth.addSubview(inputLblfourth)
         inputViefourth.addSubview(inputLbl2fourth)
+        addSubview(inputGreenfourth)
+        
+        addSubview(inputViefive)
+        inputViefive.addSubview(inputLblfive)
+        inputViefive.addSubview(inputLbl2five)
+        addSubview(inputGreenfive)
+        
+        addSubview(inputViesix)
+        inputViesix.addSubview(inputLblsix)
+        inputViesix.addSubview(inputLbl2six)
+        addSubview(inputGreensix)
+        
+        addSubview(inputVieseven)
+        inputVieseven.addSubview(inputLblseven)
+        inputVieseven.addSubview(inputLbl2seven)
+        addSubview(inputGreenseven)
         
         addSubview(addBtn)
         addSubview(lineTwo)
@@ -310,19 +450,65 @@ class FirstScreenView: UIView {
         lineOne.rightAnchor.constraint(equalTo: rightAnchor, constant: -50).isActive = true
         lineOne.leftAnchor.constraint(equalTo: leftAnchor, constant: 50).isActive = true
         
-        //MARK:- Fourth input: Cel kredytu/pożyczki(constraints)
+        //MARK:- Fourth input: Nazwa towarzystwa ubezpieczeniowego(constraints)
         inputViefourth.topAnchor.constraint(equalTo: lineOne.bottomAnchor, constant: 50).isActive = true
         inputViefourth.heightAnchor.constraint(equalToConstant: 50).isActive = true
         inputViefourth.widthAnchor.constraint(equalToConstant: 350).isActive = true
         inputViefourth.leftAnchor.constraint(equalTo: leftAnchor, constant: 50).isActive = true
         inputLbl2fourth.leftAnchor.constraint(equalTo: inputViefourth.leftAnchor, constant: 5).isActive = true
         inputLbl2fourth.topAnchor.constraint(equalTo: inputViefourth.topAnchor, constant: 20).isActive = true
+        inputGreenfourth.topAnchor.constraint(equalTo: inputViefourth.bottomAnchor, constant: 0).isActive = true
+        inputGreenfourth.heightAnchor.constraint(equalToConstant: 4).isActive = true
+        inputGreenfourth.widthAnchor.constraint(equalToConstant: 350).isActive = true
+        inputGreenfourth.centerXAnchor.constraint(equalTo: inputViefourth.centerXAnchor, constant: 0).isActive = true
         
+        
+        //MARK:- Five input: Data wejscia w zycie (constraints)
+        inputViefive.topAnchor.constraint(equalTo: lineOne.bottomAnchor, constant: 50).isActive = true
+        inputViefive.heightAnchor.constraint(equalToConstant: 50).isActive = true
+        inputViefive.widthAnchor.constraint(equalToConstant: 150).isActive = true
+        inputViefive.rightAnchor.constraint(equalTo: rightAnchor, constant: -50).isActive = true
+        inputLbl2five.leftAnchor.constraint(equalTo: inputViefive.leftAnchor, constant: 5).isActive = true
+        inputLbl2five.topAnchor.constraint(equalTo: inputViefive.topAnchor, constant: 20).isActive = true
+        inputGreenfive.topAnchor.constraint(equalTo: inputViefive.bottomAnchor, constant: 0).isActive = true
+        inputGreenfive.heightAnchor.constraint(equalToConstant: 4).isActive = true
+        inputGreenfive.widthAnchor.constraint(equalToConstant: 150).isActive = true
+        inputGreenfive.centerXAnchor.constraint(equalTo: inputViefive.centerXAnchor, constant: 0).isActive = true
+        
+        //MARK:- Six input: Cel kredytu/pożyczki(constraints)
+        inputViesix.topAnchor.constraint(equalTo: lineOne.bottomAnchor, constant: 50).isActive = true
+        inputViesix.heightAnchor.constraint(equalToConstant: 50).isActive = true
+        inputViesix.widthAnchor.constraint(equalToConstant: 150).isActive = true
+        inputViesix.rightAnchor.constraint(equalTo: inputViefive.leftAnchor, constant: -20).isActive = true
+        inputLbl2six.leftAnchor.constraint(equalTo: inputViesix.leftAnchor, constant: 5).isActive = true
+        inputLbl2six.topAnchor.constraint(equalTo: inputViesix.topAnchor, constant: 20).isActive = true
+        inputGreensix.topAnchor.constraint(equalTo: inputViesix.bottomAnchor, constant: 0).isActive = true
+        inputGreensix.heightAnchor.constraint(equalToConstant: 4).isActive = true
+        inputGreensix.widthAnchor.constraint(equalToConstant: 150).isActive = true
+        inputGreensix.centerXAnchor.constraint(equalTo: inputViesix.centerXAnchor, constant: 0).isActive = true
+        
+        
+        //MARK:- Seven input: Data wejscia w zycie(constraints)
+        inputVieseven.topAnchor.constraint(equalTo: lineOne.bottomAnchor, constant: 50).isActive = true
+        inputVieseven.heightAnchor.constraint(equalToConstant: 50).isActive = true
+        inputVieseven.leftAnchor.constraint(equalTo: inputViefourth.rightAnchor, constant: 20).isActive = true
+        inputVieseven.rightAnchor.constraint(equalTo: inputViesix.leftAnchor, constant: -20).isActive = true
+        inputLbl2seven.leftAnchor.constraint(equalTo: inputVieseven.leftAnchor, constant: 5).isActive = true
+        inputLbl2seven.topAnchor.constraint(equalTo: inputVieseven.topAnchor, constant: 20).isActive = true
+        inputGreenseven.topAnchor.constraint(equalTo: inputVieseven.bottomAnchor, constant: 0).isActive = true
+        inputGreenseven.heightAnchor.constraint(equalToConstant: 4).isActive = true
+        inputGreenseven.leftAnchor.constraint(equalTo: inputViefourth.rightAnchor, constant: 20).isActive = true
+        inputGreenseven.rightAnchor.constraint(equalTo: inputViesix.leftAnchor, constant: -20).isActive = true
+       
+        
+        
+        //MARK:-Add Button
         addBtn.topAnchor.constraint(equalTo: inputViefourth.bottomAnchor, constant: 25).isActive = true
         addBtn.heightAnchor.constraint(equalToConstant: 50).isActive = true
         addBtn.widthAnchor.constraint(equalToConstant: 50).isActive = true
         addBtn.rightAnchor.constraint(equalTo: rightAnchor, constant: -50).isActive = true
      
+        //MARK:-2 pixel line second
         lineTwo.topAnchor.constraint(equalTo: inputViefourth.bottomAnchor, constant: 50).isActive = true
         lineTwo.heightAnchor.constraint(equalToConstant: 2).isActive = true
         lineTwo.rightAnchor.constraint(equalTo: addBtn.leftAnchor, constant: -50).isActive = true
@@ -330,12 +516,13 @@ class FirstScreenView: UIView {
         
         
         
-        
+        //MARK:-Dalej Button
         dalejBtn.topAnchor.constraint(equalTo: bottomAnchor, constant: -100).isActive = true
         dalejBtn.heightAnchor.constraint(equalToConstant: 50).isActive = true
         dalejBtn.widthAnchor.constraint(equalToConstant: 200).isActive = true
         dalejBtn.rightAnchor.constraint(equalTo: rightAnchor, constant: -50).isActive = true
         
+        //MARK:-Wstecz Button
         wsteczBtn.topAnchor.constraint(equalTo: bottomAnchor, constant: -100).isActive = true
         wsteczBtn.heightAnchor.constraint(equalToConstant: 50).isActive = true
         wsteczBtn.widthAnchor.constraint(equalToConstant: 200).isActive = true
